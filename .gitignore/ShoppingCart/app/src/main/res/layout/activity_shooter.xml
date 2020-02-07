@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shooter">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="430dp"
+        android:layout_height="775dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shooterpage" />
+
+    <TextView
+        android:id="@+id/shooterScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shooter Games"
+        android:textColor="#1607F7"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <ImageView
+        android:id="@+id/codImage"
+        android:layout_width="217dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/codText"
+        app:layout_constraintEnd_toStartOf="@+id/shooterScreen"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cod" />
+
+    <TextView
+        android:id="@+id/codText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COD Modern Warfare"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codImage" />
+
+    <Button
+        android:id="@+id/buyCodButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="148dp"
+        android:text="Buy"
+        android:onClick="buyCod"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/codImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fortniteImage"
+        android:layout_width="230dp"
+        android:layout_height="319dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/codImage"
+        app:srcCompat="@drawable/fortnite" />
+
+    <TextView
+        android:id="@+id/fortniteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="204dp"
+        android:text="Fortnite"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codText" />
+
+    <Button
+        android:id="@+id/buyFortniteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="284dp"
+        android:text="Buy"
+        android:onClick="buyFortnite"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/shooterScreen" />
+
+    <ImageView
+        android:id="@+id/csgoImage"
+        android:layout_width="200dp"
+        android:layout_height="188dp"
+        android:layout_marginTop="228dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codText"
+        app:srcCompat="@drawable/csgo" />
+
+    <TextView
+        android:id="@+id/csgoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="164dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:text="CS:GO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fortniteText" />
+
+    <Button
+        android:id="@+id/buyCsgoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="164dp"
+        android:text="Buy"
+        android:textSize="20dp"
+        android:onClick="buyCsgo"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="@+id/csgoImage"
+        app:layout_constraintTop_toBottomOf="@+id/buyFortniteButton" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="236dp"
+        android:text="Back"
+        android:textSize="25dp"
+        android:onClick="goBack"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/csgoText"
+        app:layout_constraintTop_toBottomOf="@+id/buyFortniteButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingCart">
+
+    <ImageView
+        android:id="@+id/backGroundImage"
+        android:layout_width="484dp"
+        android:layout_height="867dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shopping" />
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="28dp"
+        android:text="Shopping Cart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/whiteImage"
+        android:layout_width="356dp"
+        android:layout_height="288dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="268dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerText"
+        app:srcCompat="@drawable/white" />
+
+    <TextView
+        android:id="@+id/totalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="28dp"
+        android:text="Cart Total"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/whiteImage"
+        app:layout_constraintTop_toTopOf="@+id/whiteImage" />
+
+    <TextView
+        android:id="@+id/codAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
+        android:text="COD:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/whiteImage"
+        app:layout_constraintTop_toBottomOf="@+id/totalText" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="goBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whiteImage" />
+
+    <TextView
+        android:id="@+id/numCOD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/codAmount"
+        app:layout_constraintTop_toBottomOf="@+id/totalText" />
+
+    <TextView
+        android:id="@+id/fortniteAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="264dp"
+        android:text="Fortnite:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/numFortnite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/fortniteAmount"
+        app:layout_constraintTop_toBottomOf="@+id/numCOD" />
+
+    <TextView
+        android:id="@+id/csgoAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="12dp"
+        android:text="CS:GO:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fortniteAmount" />
+
+    <TextView
+        android:id="@+id/numCsgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="232dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/csgoAmount" />
+</androidx.constraintlayout.widget.ConstraintLayout>
